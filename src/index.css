@@ -1,13 +1,83 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#portfolio {
+    background-color: black;
+    color: white;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    width: fit-content;
+    position: fixed;
+    top: 15px;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    background-color: #111;
+    margin: 0;
+}
+
+nav>ul>li {
+    padding: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-right: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav>ul>li.active {
+    background-color: #3375B6;
+}
+
+nav>ul>li:last-child {
+    margin: 0;
+}
+
+#content-container {
+    padding-top: 65px;
+    flex-grow: 1;
+}
+
+#main-info {
+    text-transform: capitalize;
+    padding-top: 150px;
+}
+
+#main-info>div {
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+
+#job-title {
+    color: #7C8296;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#my-pic {
+    background-image: url('./michael.png');
+    width: 500px;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 84%;
+}
+
+#home-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
